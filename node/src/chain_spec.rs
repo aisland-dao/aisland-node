@@ -48,7 +48,7 @@ pub fn development_config() -> Result<ChainSpec, String> {
 		"dev",
 		ChainType::Development,
 		move || {
-			testnet_genesis(
+			blockchain_genesis(
 				wasm_binary,
 				// Initial PoA authorities
 				vec![authority_keys_from_seed("Alice")],
@@ -90,7 +90,7 @@ pub fn local_testnet_config() -> Result<ChainSpec, String> {
 		"local_testnet",
 		ChainType::Local,
 		move || {
-			testnet_genesis(
+			blockchain_genesis(
 				wasm_binary,
 				// Initial PoA authorities
 				vec![
@@ -141,7 +141,7 @@ pub fn public_testnet_config() -> Result<ChainSpec, String> {
 		"aisland_testnet",
 		ChainType::Live,
 		move || {
-			testnet_genesis(
+			blockchain_genesis(
 				wasm_binary,
 				// Initial PoA authorities (Aura,Grandpa)
 				vec![
@@ -193,10 +193,80 @@ pub fn public_testnet_config() -> Result<ChainSpec, String> {
 		None,
 	))
 }
+pub fn public_mainnet_config() -> Result<ChainSpec, String> {
+	let wasm_binary = WASM_BINARY.ok_or_else(|| "Development wasm not available".to_string())?;
+
+	Ok(ChainSpec::from_genesis(
+		// Name
+		"Aisland Mainnet",
+		// ID
+		"aisland_mainnet",
+		ChainType::Live,
+		move || {
+			blockchain_genesis(
+				wasm_binary,
+				// Initial PoA authorities (Aura,Grandpa)
+				vec![
+					(
+					 hex!("5ea8a8624c3a9a92ee670255e0581f165ad7296488cf7888469fe1df48e35a7c").unchecked_into(),
+					 hex!("b2c7585164154e28eeb5de74bf4664487292cf0b3b55b2e3c467169ad0a585ff").unchecked_into()
+					),
+					(
+					 hex!("749c4aa8de06d015cafc38b1abafef5348e54e3f1fe4cc4a37b229a4c0a2ae2e").unchecked_into(),
+					 hex!("430838faae609280cf16274f6c17fd02c57643e7577213272add28c139d35ff4").unchecked_into()
+					),
+					(
+					 hex!("524af842443c3780f203e6128e64a0b5b855596b510cc5c62cee15c47c02b06e").unchecked_into(),
+					 hex!("cef0468a34ae89127711aef517569ca2273e6693e45492fb73692039b18c91b3").unchecked_into()
+					),
+					(
+					 hex!("f6edf6f0b04e564fcebcd767ce57371100cfb17c488d17ca716c0b89592c6449").unchecked_into(),
+					 hex!("cad1c490410e53560d30383d551ab4703b952490282ec3f05bd1446fb7b9cd68").unchecked_into()
+					)
+				],
+				// Sudo account
+				hex!("787cfae73abc1c72d7763528b484f36e644ae3d1b83059c98a24825f77735126").into(),
+
+				// Pre-funded accounts
+				vec![
+					hex!("787cfae73abc1c72d7763528b484f36e644ae3d1b83059c98a24825f77735126").into(),
+					hex!("96a4e3c699df5daf3941a232b81208e1c110fdc44d18fc47b492523520fe3826").into(),
+					hex!("f2166f9e848c86e87d255e79a0d4f2ba2290c77855eb24203b5e232f1f16d53b").into(),
+				],
+				true,
+			)
+		},
+		// Bootnodes
+		vec![
+            "/ip4/5.9.31.145/tcp/30333/p2p/12D3KooWFu3RN7pVgn7tG5FYR1nPQVw2qpLaL1BkzCF2oLP3PV8G"
+                .parse()
+                .unwrap(),
+            "/ip4/135.181.213.73/tcp/30333/p2p/12D3KooWPbX3PwRcAcgmvA79dG9i2FeuKLDfwuLJ3cx8brbjgQa2"
+                .parse()
+                .unwrap(),
+            "/ip4/79.143.186.172/tcp/30333/p2p/12D3KooWT2AASJbzJNKxoRYb7PnW6TAK7dsr42WkWDvN1WuDYZu8"
+                .parse()
+                .unwrap(),
+            "/ip4/65.108.9.21/tcp/30333/p2p/12D3KooWDrJVWV3FLyXEFCUQYZyLwefKRbv8G46ZCAzkAx9Jm39D"
+                .parse()
+                .unwrap(),                
+	        ],
+		// Telemetry
+		None,
+		// Protocol ID
+		None,
+		// ??
+		None,
+		// Properties
+		Some(aisland_properties()),
+		// Extensions
+		None,
+	))
+}
 
 
 /// Configure initial storage state for FRAME modules.
-fn testnet_genesis(
+fn blockchain_genesis(
 	wasm_binary: &[u8],
 	initial_authorities: Vec<(AuraId, GrandpaId)>,
 	root_key: AccountId,
