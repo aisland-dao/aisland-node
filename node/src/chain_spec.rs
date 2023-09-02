@@ -209,19 +209,19 @@ pub fn public_mainnet_config() -> Result<ChainSpec, String> {
 				vec![
 					(
 					 hex!("5ea8a8624c3a9a92ee670255e0581f165ad7296488cf7888469fe1df48e35a7c").unchecked_into(),
-					 hex!("b2c7585164154e28eeb5de74bf4664487292cf0b3b55b2e3c467169ad0a585ff").unchecked_into()
+					 hex!("bc6a746ec2c2281858b2760dea38359cf52a8a9ba61eae775469bcc1a894cc70").unchecked_into()
 					),
 					(
 					 hex!("749c4aa8de06d015cafc38b1abafef5348e54e3f1fe4cc4a37b229a4c0a2ae2e").unchecked_into(),
-					 hex!("430838faae609280cf16274f6c17fd02c57643e7577213272add28c139d35ff4").unchecked_into()
+					 hex!("30ebd4324effca51e015210bae25f603090ddcb9b3c3367b7008dabd4416e57f").unchecked_into()
 					),
 					(
 					 hex!("524af842443c3780f203e6128e64a0b5b855596b510cc5c62cee15c47c02b06e").unchecked_into(),
-					 hex!("cef0468a34ae89127711aef517569ca2273e6693e45492fb73692039b18c91b3").unchecked_into()
+					 hex!("08e4230590c7049cc9c826b0d3817cb56b2fce045a8134b19a6f69ac9324bead").unchecked_into()
 					),
 					(
 					 hex!("f6edf6f0b04e564fcebcd767ce57371100cfb17c488d17ca716c0b89592c6449").unchecked_into(),
-					 hex!("cad1c490410e53560d30383d551ab4703b952490282ec3f05bd1446fb7b9cd68").unchecked_into()
+					 hex!("22c173dee1c236ed505accdf3ea83c7d88982e0cf28961d5b962b77f96dae760").unchecked_into()
 					)
 				],
 				// Sudo account
