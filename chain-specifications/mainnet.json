@@ -5,7 +5,8 @@
   "bootNodes": [
     "/ip4/5.9.31.145/tcp/30333/p2p/12D3KooWFu3RN7pVgn7tG5FYR1nPQVw2qpLaL1BkzCF2oLP3PV8G",
     "/ip4/135.181.213.73/tcp/30333/p2p/12D3KooWPbX3PwRcAcgmvA79dG9i2FeuKLDfwuLJ3cx8brbjgQa2",
-    "/ip4/79.143.186.172/tcp/30333/p2p/12D3KooWT2AASJbzJNKxoRYb7PnW6TAK7dsr42WkWDvN1WuDYZu8"
+    "/ip4/79.143.186.172/tcp/30333/p2p/12D3KooWT2AASJbzJNKxoRYb7PnW6TAK7dsr42WkWDvN1WuDYZu8",
+    "/ip4/65.108.9.21/tcp/30333/p2p/12D3KooWDrJVWV3FLyXEFCUQYZyLwefKRbv8G46ZCAzkAx9Jm39D"
   ],
   "telemetryEndpoints": null,
   "protocolId": null,
@@ -22,23 +23,28 @@
       },
       "aura": {
         "authorities": [
-          "5ECpTeAPkfwzufSVvEoCrKmeFxgzLoeVAgmMgRwKgLBmvTmQ",
-          "5EhbqgMQRQzmm6p9DvY97V2ZLwj52oMRLDaa1q2H8kHevKwp",
-          "5Dvc47BGwYWbowGhQYwkxnyiAa8HKxcdfiVohyBAkVcYzAGB"
+          "5GzeGHG4oPGbHVn8vVB6HFxdgLfLDbJtE5qYWRd8DhWL8dXq",
+          "5Eq2MrXM4JND18KsvDxgdDC5vooyYmYkvhPGHbmBe9gzJRn7",
+          "5FpQUvGQqaB71Gny2H5svZF3Rg13WHe9qCFLmUEGh78PGgpX",
+          "5Gn1DVUpErE6gQZu7u4UDFoqLA9crmPwXUbjqciZ3z4Tyj3N"
         ]
       },
       "grandpa": {
         "authorities": [
           [
-            "5GKkUye13QwsxQcN4cTB6SVaDMabjck3eKNHbtDbYvytiTdX",
+            "5FdrNg7WESngtn2DezmLCZv1h2wabzj7aokGjByVgLHqGhjE",
             1
           ],
           [
-            "5DArDDYDhgFi1teHqPEET5HtKernXavCnn2q5WVMy3Re56BF",
+            "5FPkDYdTw2AhM4CaNf4xnruUWJ7YkUVhDCRRQUaHU9Lu3DQe",
             1
           ],
           [
-            "5CGN1bLfyABFmpWSR2JTq2H7ELWNFWk6dDiJMstoY24Pw8v6",
+            "5DvBk96QemByND2RRg1NVRhtkDxYYvjn9ccA94y6CVR6Yt64",
+            1
+          ],
+          [
+            "5Gop3BqEgvYEf55aji3qyaf9vRQjLacYn7vjVJraQVmr6DkX",
             1
           ]
         ]
@@ -47,15 +53,15 @@
         "balances": [
           [
             "5EngjJXyV7R8kghgBHpvcr29ex2JiRosmcNT6iKS1rJjLYE5",
-            1000000000000000000000000
+            1152921504606846976
           ],
           [
             "5FUE2FSypWgPE7FLstGFsQKD81ew3riiwQfYPT2sAp9Ry9vH",
-            1000000000000000000000000
+            1152921504606846976
           ],
           [
             "5HY87LncW3PLGQGEU4xqYr8aJzscZ6PWVQfRSLV826JYbUBc",
-            1000000000000000000000000
+            1152921504606846976
           ]
         ]
       },
