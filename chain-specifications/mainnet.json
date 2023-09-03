@@ -5,8 +5,7 @@
   "bootNodes": [
     "/ip4/5.9.31.145/tcp/30333/p2p/12D3KooWFu3RN7pVgn7tG5FYR1nPQVw2qpLaL1BkzCF2oLP3PV8G",
     "/ip4/135.181.213.73/tcp/30333/p2p/12D3KooWPbX3PwRcAcgmvA79dG9i2FeuKLDfwuLJ3cx8brbjgQa2",
-    "/ip4/79.143.186.172/tcp/30333/p2p/12D3KooWT2AASJbzJNKxoRYb7PnW6TAK7dsr42WkWDvN1WuDYZu8",
-    "/ip4/65.108.9.21/tcp/30333/p2p/12D3KooWDrJVWV3FLyXEFCUQYZyLwefKRbv8G46ZCAzkAx9Jm39D"
+    "/ip4/79.143.186.172/tcp/30333/p2p/12D3KooWT2AASJbzJNKxoRYb7PnW6TAK7dsr42WkWDvN1WuDYZu8"
   ],
   "telemetryEndpoints": null,
   "protocolId": null,
@@ -25,8 +24,7 @@
         "authorities": [
           "5ECpTeAPkfwzufSVvEoCrKmeFxgzLoeVAgmMgRwKgLBmvTmQ",
           "5EhbqgMQRQzmm6p9DvY97V2ZLwj52oMRLDaa1q2H8kHevKwp",
-          "5Dvc47BGwYWbowGhQYwkxnyiAa8HKxcdfiVohyBAkVcYzAGB",
-          "5HeUKvTXm9pt3sQWQeGrMRQtuZVSAzHVJVCuffnwtSRBkUx5"
+          "5Dvc47BGwYWbowGhQYwkxnyiAa8HKxcdfiVohyBAkVcYzAGB"
         ]
       },
       "grandpa": {
@@ -42,10 +40,6 @@
           [
             "5CGN1bLfyABFmpWSR2JTq2H7ELWNFWk6dDiJMstoY24Pw8v6",
             1
-          ],
-          [
-            "5CrGxD3QRoGMQj5roW8GmBWLt7LE5vpLWdZCtie9vtqcnpRp",
-            1
           ]
         ]
       },
@@ -53,15 +47,15 @@
         "balances": [
           [
             "5EngjJXyV7R8kghgBHpvcr29ex2JiRosmcNT6iKS1rJjLYE5",
-            1152921504606846976
+            1000000000000000000000000
           ],
           [
             "5FUE2FSypWgPE7FLstGFsQKD81ew3riiwQfYPT2sAp9Ry9vH",
-            1152921504606846976
+            1000000000000000000000000
           ],
           [
             "5HY87LncW3PLGQGEU4xqYr8aJzscZ6PWVQfRSLV826JYbUBc",
-            1152921504606846976
+            1000000000000000000000000
           ]
         ]
       },
