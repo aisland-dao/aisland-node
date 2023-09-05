@@ -99,6 +99,7 @@ The current network is permissioned, we need to enable your validator, please co
 ### How to get AISC for Testnet
 You can get 100 free AISC on Testnet using our free minter available at:  
 [https://testnet.aisland.io:8443](https://testnet.aisland.io:8443)  
+You should wait 20 seconds betweeen each request.
 
 
 ### Bugs Reporting
